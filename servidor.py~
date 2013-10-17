@@ -1,3 +1,4 @@
+# Repositorio de Reyna
 #encoding:utf-8
 import socket  
   
@@ -9,7 +10,7 @@ sc, addr = s.accept()
   
 while True:  
       recibido = sc.recv(1024)  
-      if recibido == "salir":  
+      if recibido == "bye":  
          break        
       print "Recibido:", recibido  
       sc.send(recibido)  
